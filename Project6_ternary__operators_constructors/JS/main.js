@@ -1,3 +1,11 @@
+//Ternary operator
+function Vote_Function() {
+    var Age, Can_Vote;
+    Age = document.getElementById("Age").value;
+    Can_Vote = (Age <18) ? "You are not old enough " : "You are old enough ";
+    document.getElementById("Vote").innerHTML = Can_Vote + "to vote.";
+}
+
 //constructor
 function Vehicle(Make, Model, Year, Color) {
     this.Vehicle_Make = Make;
