@@ -40,8 +40,7 @@ function age_function() {
 }
 
 function time_function() {
-    console.log(time_function); //displaying and debugging in console
-    var Time = new Date().get_Hours(); //gets local time and assings it to the var
+    var Time = new Date().getHours(); //gets local time and assings it to the var
     var Reply;
     if (Time < 12 == Time > 0) { //checks if the time is between 12and00
         Reply = "It is morning time.";
