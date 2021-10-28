@@ -42,15 +42,16 @@ function age_function() {
 function time_function() {
     var Time = new Date().getHours(); //gets local time and assings it to the var
     var Reply;
-    if (Time < 12 == Time > 0) { //checks if the time is between 12and00
+    if (Time < 12 && Time > 0) { //checks if the time is between 12and00
         Reply = "It is morning time.";
     }
-    else if (Time > 12 == Time < 18) { //checks if time is between 12 and 18
+    else if (Time > 12 && Time < 18) { //checks if time is between 12 and 18
         Reply ="It is the afternoon."
     }
 
     else { //if none of the above is true displays the text bellow
         Reply = "It is evening time."
-        document.getElementById("time_today").innerHTML = Reply;
     }
+    document.getElementById("time_today").innerHTML = Reply;
 }
+
