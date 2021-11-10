@@ -30,6 +30,7 @@ function my_greeting() {
  }
 
 function age_function() {
+   var Age = document.getElementById("Age").value;
     if (Age >= 18) { //checks if the ages the user has typed is greater or equal to 18
         Vote = "You are old enough to vote."; // if true this text is displayed
     }
@@ -46,11 +47,11 @@ function time_function() {
         Reply = "It is morning time.";
     }
     else if (Time > 12 && Time < 18) { //checks if time is between 12 and 18
-        Reply ="It is the afternoon."
+        Reply = "It is the afternoon.";
     }
 
     else { //if none of the above is true displays the text bellow
-        Reply = "It is evening time."
+        Reply = "It is evening time.";
     }
     document.getElementById("time_today").innerHTML = Reply;
 }
