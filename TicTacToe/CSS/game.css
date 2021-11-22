@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+}
+/* table and canvas container*/
+.center-container {
+    width: 608px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+table {
+    /*collapses borders into 1*/
+    border-collapse: collapse; 
+    /*hides outerborders*/
+    border-style: hidden;
+}
+
+td {
+    cursor: pointer;
+    border: 4px solid rgba(3, 252, 119, 0.8);
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+}
+
+canvas {
+    /*sets the position to top left corner*/
+    position: absolute;
+    z-index: 10;
+    /*makes canvas invisible*/
+    pointer-events: none;
+}
