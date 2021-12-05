@@ -3,9 +3,9 @@
 <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body></body>
+
 <script>
-$(document).ready(function() {
+$(document).ready(function() { //this function will add the elements listed bellow
     $("html").append(
         "<body>\
             <div id='container'\
@@ -18,9 +18,9 @@ $(document).ready(function() {
             </div>\
             </body>"
     );
-    $("p").css({"color":"red"});
-    $("#3").click(function() {
-        $("h1").fadeOut();
+    $("p").css({"color":"red"}); //styles p in red
+    $("#3").click(function() { //the function bellow will be executed on click on p with id 3
+        $("h1").fadeOut(); //the h1 will fade out and disappear
     });
 });
 </script>
